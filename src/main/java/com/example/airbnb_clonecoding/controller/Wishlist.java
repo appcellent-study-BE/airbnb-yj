@@ -1,4 +1,4 @@
 package com.example.airbnb_clonecoding.controller;
 
-public class Controller {
+public class Wishlist {
 }
