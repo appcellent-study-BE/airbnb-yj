@@ -2,8 +2,9 @@ package com.example.airbnb_clonecoding.model;
 
 import jakarta.persistence.*;
 
-@Entity
+import java.time.LocalDateTime;
 
+@Entity
 public class Reservation {
 
     @Id
@@ -13,4 +14,21 @@ public class Reservation {
 
     @ManyToOne
     private Member userId;
+
+    @ManyToOne
+    private Room roomId;
+
+    private LocalDateTime checkInDate;
+
+    private LocalDateTime checkOutDate;
+
+    private String status;
+
+    private int adults;
+
+    private int children;
+
+    private int infants;
+
+    private int pets;
 }
