@@ -1,7 +1,6 @@
 package com.example.airbnb_clonecoding.model;
 
 import jakarta.persistence.*;
-
 import java.time.LocalDate;
 
 @Entity
@@ -10,7 +9,7 @@ public class Host {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "HOST_ID")
-    private Long hostId;
+    private int hostId;
 
     @OneToOne
     private Member userId;

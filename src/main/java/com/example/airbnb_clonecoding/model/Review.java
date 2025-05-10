@@ -1,16 +1,17 @@
 package com.example.airbnb_clonecoding.model;
 
 import jakarta.persistence.*;
-
+import lombok.*;
 import java.time.LocalDateTime;
 
+@Getter
 @Entity
 public class Review {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "REVIEW_ID")
-    private Long reviewId;
+    private int reviewId;
 
     @ManyToOne
     private Room roomId;
@@ -21,11 +22,12 @@ public class Review {
     @OneToOne
     private Reservation reservationId;
 
-    private float averageRating;
-
+    @Column(length = 500)
     private String review;
 
     private LocalDateTime reviewDate;
+
+    private float rating;
 
     private float ratingClean;
 
@@ -33,7 +35,7 @@ public class Review {
 
     private float ratingCheckIn;
 
-    private float ratingConversation;
+    private float ratingCommunication;
 
     private float ratingLocation;
 

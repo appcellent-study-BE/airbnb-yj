@@ -8,7 +8,7 @@ public class RoomAmenity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ROOM_AMENITY_ID")
-    private Long roomAmenityId;
+    private int roomAmenityId;
 
     @OneToOne
     private Room roomId;

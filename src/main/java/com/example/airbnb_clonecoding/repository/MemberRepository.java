@@ -1,4 +1,4 @@
 package com.example.airbnb_clonecoding.repository;
 
-public interface Member {
+public interface MemberRepository {
 }

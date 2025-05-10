@@ -8,7 +8,7 @@ public class Trip {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "TRIP_ID")
-    private Long tripId;
+    private int tripId;
 
     @OneToOne
     private Reservation reservationId;

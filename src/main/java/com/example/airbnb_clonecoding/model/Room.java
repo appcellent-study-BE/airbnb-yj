@@ -1,9 +1,12 @@
 package com.example.airbnb_clonecoding.model;
 
 import jakarta.persistence.*;
+import lombok.*;
 
+import java.math.BigDecimal;
 import java.time.LocalTime;
 
+@Getter
 @Entity
 public class Room {
 
@@ -15,12 +18,16 @@ public class Room {
     @ManyToOne
     private Host hostId;
 
+    @Column(length = 50)
     private String roomName;
 
+    @Column(columnDefinition = "TEXT")
     private String roomDscrptn;
 
+    @Column(length = 150)
     private String roomAddress;
 
+    @Column(length = 500)
     private String roomLocation;
 
     private int roomAdultMax;
@@ -33,7 +40,8 @@ public class Room {
 
     private int bathroomNum;
 
-    private float roomPrice;
+    @Column(precision = 10, scale = 2)
+    private BigDecimal roomPrice;
 
     private LocalTime checkInTime;
 

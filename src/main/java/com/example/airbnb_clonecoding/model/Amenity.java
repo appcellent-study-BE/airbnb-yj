@@ -1,5 +1,6 @@
 package com.example.airbnb_clonecoding.model;
 
+import com.example.airbnb_clonecoding.model.enums.AmenityCategory;
 import jakarta.persistence.*;
 
 @Entity
@@ -8,9 +9,10 @@ public class Amenity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "Amenity_ID")
-    private Long amenityId;
+    private int amenityId;
 
-    private Enum amenityCategory;
+    private AmenityCategory amenityCategory;
 
+    @Column(length = 50)
     private String amenity;
 }

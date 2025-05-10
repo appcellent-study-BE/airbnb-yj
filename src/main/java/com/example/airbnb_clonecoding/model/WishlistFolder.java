@@ -8,10 +8,11 @@ public class WishlistFolder {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "WISHLIST_FOLDER_ID")
-    private Long wishlistFolderId;
+    private int wishlistFolderId;
 
     @ManyToOne
     private Member userId;
 
+    @Column(length = 20)
     private String wishlistName;
 }

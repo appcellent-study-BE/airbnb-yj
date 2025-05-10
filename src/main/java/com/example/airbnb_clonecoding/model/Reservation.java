@@ -1,7 +1,7 @@
 package com.example.airbnb_clonecoding.model;
 
+import com.example.airbnb_clonecoding.model.enums.ReservationStatus;
 import jakarta.persistence.*;
-
 import java.time.LocalDateTime;
 
 @Entity
@@ -10,7 +10,7 @@ public class Reservation {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "RESERVATION_ID")
-    private Long reservationId;
+    private int reservationId;
 
     @ManyToOne
     private Member userId;
@@ -22,7 +22,7 @@ public class Reservation {
 
     private LocalDateTime checkOutDate;
 
-    private String status;
+    private ReservationStatus status;
 
     private int adults;
 

@@ -8,12 +8,11 @@ public class RoomPhoto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "PHOTO_ID")
-    private Long photoId;
+    private int photoId;
 
     @OneToOne
     private Room roomId;
 
-    private Enum roomPhotoCategory;
-
+    @Column(columnDefinition = "TEXT")
     private String roomPhotoUrl;
 }

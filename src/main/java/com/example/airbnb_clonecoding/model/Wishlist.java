@@ -8,7 +8,7 @@ public class Wishlist {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "WISHLIST_ID")
-    private Long wishlistId;
+    private int wishlistId;
 
     @ManyToOne
     private Room roomId;

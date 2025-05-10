@@ -1,7 +1,7 @@
 package com.example.airbnb_clonecoding.model;
 
+import com.example.airbnb_clonecoding.model.enums.Gender;
 import jakarta.persistence.*;
-
 import java.time.LocalDate;
 
 @Entity
@@ -10,16 +10,21 @@ public class Member {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "USER_ID")
-    private Long userId;
+    private int userId;
 
+    @Column(length = 20)
     private String userName;
 
+    @Column(length = 20)
     private String userLoginId;
 
+    @Column(length = 20)
     private String userPassword;
 
+    @Column(length = 255)
     private String userEmail;
 
+    @Column(length = 13)
     private String userPhoneNum;
 
     private LocalDate userDOB;
@@ -28,7 +33,7 @@ public class Member {
 
     private LocalDate registerDate;
 
-    private Enum userGender;
+    private Gender userGender;
 
     private boolean isCertificate;
 }
