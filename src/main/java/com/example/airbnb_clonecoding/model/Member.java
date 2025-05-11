@@ -2,9 +2,14 @@ package com.example.airbnb_clonecoding.model;
 
 import com.example.airbnb_clonecoding.model.enums.Gender;
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.time.LocalDate;
 
 @Entity
+@Getter
+@Setter
 public class Member {
 
     @Id
@@ -18,7 +23,7 @@ public class Member {
     @Column(length = 20)
     private String userLoginId;
 
-    @Column(length = 20)
+    @Column(length = 100)
     private String userPassword;
 
     @Column(length = 255)
