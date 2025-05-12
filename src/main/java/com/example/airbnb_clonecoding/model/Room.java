@@ -6,8 +6,9 @@ import lombok.*;
 import java.math.BigDecimal;
 import java.time.LocalTime;
 
-@Getter
 @Entity
+@Getter
+@Setter
 public class Room {
 
     @Id

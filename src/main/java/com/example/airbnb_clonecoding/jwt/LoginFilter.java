@@ -31,13 +31,13 @@ public class LoginFilter extends UsernamePasswordAuthenticationFilter {
         return authenticationManager.authenticate(authToken);
     }
 
-    @Override
-    protected void successAuthentication(HttpServletRequest request, HttpServletResponse response, FilterChain chain, Authentication authentication) {
-
-    }
-
-    @Override
-    protected void failureAuthentication(HttpServletRequest request, HttpServletResponse response, AuthenticationException failed) {
-
-    }
+//    @Override
+//    protected void successAuthentication(HttpServletRequest request, HttpServletResponse response, FilterChain chain, Authentication authentication) {
+//
+//    }
+//
+//    @Override
+//    protected void failureAuthentication(HttpServletRequest request, HttpServletResponse response, AuthenticationException failed) {
+//
+//    }
 }
