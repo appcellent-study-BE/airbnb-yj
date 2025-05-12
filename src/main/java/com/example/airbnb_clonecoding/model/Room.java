@@ -9,6 +9,9 @@ import java.time.LocalTime;
 @Entity
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Room {
 
     @Id

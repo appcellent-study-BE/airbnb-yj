@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 public class ReviewService {
 
     private final ReservationRepository reservationRepository;
-    private ReviewRepository reviewRepository;
+    private final ReviewRepository reviewRepository;
 
     public ReviewService(ReviewRepository reviewRepository, ReservationRepository reservationRepository) {
 
