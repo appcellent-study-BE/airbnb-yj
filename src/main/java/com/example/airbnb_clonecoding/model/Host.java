@@ -2,11 +2,15 @@ package com.example.airbnb_clonecoding.model;
 
 import jakarta.persistence.*;
 import lombok.*;
+
 import java.time.LocalDate;
 
 @Entity
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Host {
 
     @Id
