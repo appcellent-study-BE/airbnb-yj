@@ -1,9 +1,12 @@
 package com.example.airbnb_clonecoding.model;
 
 import com.example.airbnb_clonecoding.model.enums.AmenityCategory;
+import lombok.*;
 import jakarta.persistence.*;
 
 @Entity
+@Getter
+@Setter
 public class Amenity {
 
     @Id

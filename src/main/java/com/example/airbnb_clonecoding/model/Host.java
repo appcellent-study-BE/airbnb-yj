@@ -2,7 +2,6 @@ package com.example.airbnb_clonecoding.model;
 
 import jakarta.persistence.*;
 import lombok.*;
-
 import java.time.LocalDate;
 
 @Entity

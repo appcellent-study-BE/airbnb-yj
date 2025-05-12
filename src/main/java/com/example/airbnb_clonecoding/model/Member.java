@@ -2,9 +2,7 @@ package com.example.airbnb_clonecoding.model;
 
 import com.example.airbnb_clonecoding.model.enums.Gender;
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
-
+import lombok.*;
 import java.time.LocalDate;
 
 @Entity
