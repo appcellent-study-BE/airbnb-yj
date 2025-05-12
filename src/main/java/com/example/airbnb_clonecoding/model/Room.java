@@ -2,12 +2,12 @@ package com.example.airbnb_clonecoding.model;
 
 import jakarta.persistence.*;
 import lombok.*;
-
 import java.math.BigDecimal;
 import java.time.LocalTime;
 
-@Getter
 @Entity
+@Getter
+@Setter
 public class Room {
 
     @Id

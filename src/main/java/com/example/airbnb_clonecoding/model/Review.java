@@ -4,8 +4,9 @@ import jakarta.persistence.*;
 import lombok.*;
 import java.time.LocalDateTime;
 
-@Getter
 @Entity
+@Getter
+@Setter
 public class Review {
 
     @Id

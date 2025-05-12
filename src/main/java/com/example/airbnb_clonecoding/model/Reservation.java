@@ -2,9 +2,12 @@ package com.example.airbnb_clonecoding.model;
 
 import com.example.airbnb_clonecoding.model.enums.ReservationStatus;
 import jakarta.persistence.*;
+import lombok.*;
 import java.time.LocalDateTime;
 
 @Entity
+@Getter
+@Setter
 public class Reservation {
 
     @Id
