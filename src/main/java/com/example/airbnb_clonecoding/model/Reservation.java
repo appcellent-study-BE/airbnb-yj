@@ -8,6 +8,9 @@ import java.time.LocalDateTime;
 @Entity
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Reservation {
 
     @Id
@@ -25,6 +28,7 @@ public class Reservation {
 
     private LocalDateTime checkOutDate;
 
+    @Enumerated(EnumType.STRING)
     private ReservationStatus status;
 
     private int adults;
