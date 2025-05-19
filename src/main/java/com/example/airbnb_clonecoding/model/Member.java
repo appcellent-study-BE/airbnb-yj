@@ -21,7 +21,7 @@ public class Member {
     @Column(length = 20)
     private String userLoginId;
 
-    @Column(length = 20)
+    @Column(length = 100)
     private String userPassword;
 
     @Column(length = 255)

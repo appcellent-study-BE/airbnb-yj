@@ -25,6 +25,7 @@ public class Reservation {
 
     private LocalDateTime checkOutDate;
 
+    @Enumerated(EnumType.STRING)
     private ReservationStatus status;
 
     private int adults;
