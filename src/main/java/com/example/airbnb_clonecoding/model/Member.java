@@ -39,4 +39,6 @@ public class Member {
     private Gender userGender;
 
     private boolean isCertificate;
+
+    private String role; // for test
 }
