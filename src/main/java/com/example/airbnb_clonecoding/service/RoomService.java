@@ -1,6 +1,6 @@
 package com.example.airbnb_clonecoding.service;
 
-import com.example.airbnb_clonecoding.dto.RoomDto;
+import com.example.airbnb_clonecoding.dto.RoomDetailDto;
 import com.example.airbnb_clonecoding.dto.ReviewDto;
 import com.example.airbnb_clonecoding.model.Room;
 import com.example.airbnb_clonecoding.model.Review;
@@ -22,7 +22,7 @@ public class RoomService {
         this.reviewRepository = reviewRepository;
     }
 
-    public RoomDto roomDetail(int roomId) {
+    public RoomDetailDto roomDetail(int roomId) {
         // 숙소 정보 조회
         Room room = roomRepository.findById(roomId)
                 .orElseThrow(() -> new RuntimeException("No room"));
@@ -66,7 +66,7 @@ public class RoomService {
         }).collect(Collectors.toList());
 
         // 숙소 정보
-        return RoomDto.builder()
+        return RoomDetailDto.builder()
                 .roomId(room.getRoomId())
                 .roomName(room.getRoomName())
                 .capacityMax(room.getRoomAdultMax() + room.getRoomChildrenMax())

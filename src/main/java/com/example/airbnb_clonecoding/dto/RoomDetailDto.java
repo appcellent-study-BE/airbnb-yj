@@ -10,7 +10,7 @@ import java.util.List;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class RoomDto {
+public class RoomDetailDto {
 
     private int roomId;
     private String roomName;
