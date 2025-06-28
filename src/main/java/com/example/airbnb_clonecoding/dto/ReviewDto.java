@@ -1,10 +1,14 @@
 package com.example.airbnb_clonecoding.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class ReviewDto {
 
     private int reservationId;          // 예약 번호

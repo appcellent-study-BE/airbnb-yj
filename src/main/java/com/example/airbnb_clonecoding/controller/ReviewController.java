@@ -3,9 +3,7 @@ package com.example.airbnb_clonecoding.controller;
 import com.example.airbnb_clonecoding.dto.ResponseDto;
 import com.example.airbnb_clonecoding.dto.ReviewDto;
 import com.example.airbnb_clonecoding.service.ReviewService;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class ReviewController {
@@ -26,5 +24,4 @@ public class ReviewController {
 
         return ResponseDto.success("review success", null);
     }
-
 }
