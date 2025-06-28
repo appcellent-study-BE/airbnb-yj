@@ -13,7 +13,7 @@ public class Room {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ROOM_ID")
-    private Long roomId;
+    private int roomId;
 
     @ManyToOne
     private Host hostId;
